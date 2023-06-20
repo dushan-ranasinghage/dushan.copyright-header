@@ -1,11 +1,11 @@
 {
   "name": "copyright-header",
   "displayName": "Copyright Header",
-  "description": "This simplifies the process of automatically ancluding copyright and license information into your code.",
+  "description": "This simplifies the process of automatically including copyright and license information into your code.",
   "license": "SEE LICENSE IN LICENSE.txt",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
-    "vscode": "^1.79.0"
+    "vscode": "0.10.x"
   },
   "keywords": [
     "copyright",
