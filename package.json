@@ -9,16 +9,31 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+		"onCommand:copyright-header.add",
+		"onLanguage:javascript",
+		"onLanguage:typescript",
+		"onLanguage:typescriptreact"
+	],
   "main": "./dist/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "copyright-header.helloWorld",
-        "title": "Hello World"
-      }
-    ]
-  },
+	"contributes": {
+		"commands": [
+			{
+				"command": "copyright-header.add",
+				"title": "Add Copyright Header"
+			}
+		],
+		"configuration": {
+			"title": "copyright-header",
+			"properties": {
+				"copyright.author": {
+					"type": "string",
+					"default": "Dushan Ranasinghage",
+					"description": "The author who is doing the develoment in this workspace."
+				}
+			}
+		}
+	},
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
