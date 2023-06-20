@@ -6,6 +6,7 @@
  */
 
 import * as vscode from 'vscode';
+import * as path from 'path';
 
 import config from '../config/config';
 import { languages } from '../constants/constants';
@@ -20,7 +21,7 @@ function copyrightCheck(editor: vscode.TextEditor | undefined) {
 
 function insertCopyrightHeader(editor: vscode.TextEditor) {
     const fileStartPosition = new vscode.Position(0, 0);
-    const copyright = new Copyright();
+    const copyright = new Copyright(editor);
     const copyrightHeader = copyright.get();
 
     editor.edit(file => file.insert(fileStartPosition, copyrightHeader));
@@ -34,6 +35,11 @@ function isNewFile(file: any) {
     return file.lineCount <= 1;
 }
 
+function getFileName(filePath: string) {
+    return path.basename(filePath);
+}
+
 export {
-    copyrightCheck
+    copyrightCheck,
+    getFileName
 };
