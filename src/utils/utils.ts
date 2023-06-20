@@ -9,11 +9,20 @@ import * as vscode from 'vscode';
 
 import config from '../config/config';
 import { languages } from '../constants/constants';
+import Copyright from '../service/Copyright';
 
 function copyrightCheck(editor: vscode.TextEditor | undefined) {
     if (editor !== undefined && isSupportedLanguage(editor.document.languageId)) {
-        console.log('insert copyright');
+        insertCopyrightHeader(editor);
     }
+}
+
+function insertCopyrightHeader(editor: vscode.TextEditor) {
+    const docStartPosition = new vscode.Position(0, 0);
+    const copyright = new Copyright();
+    const copyrightHeader = copyright.get();
+
+    editor.edit(document => document.insert(docStartPosition, copyrightHeader));
 }
 
 function isSupportedLanguage(lang: string) {
