@@ -5,7 +5,7 @@
   "license": "SEE LICENSE IN LICENSE.txt",
   "version": "1.0.0",
   "engines": {
-    "vscode": "0.10.x"
+    "vscode": "^1.35.0"
   },
   "keywords": [
     "copyright",
@@ -74,7 +74,7 @@
     "@types/glob": "^8.1.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "^20.2.5",
-    "@types/vscode": "^1.79.0",
+    "@types/vscode": "^1.35.0",
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",
     "@vscode/test-electron": "^2.3.2",
