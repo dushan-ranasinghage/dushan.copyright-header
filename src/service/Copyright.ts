@@ -1,6 +1,6 @@
 /**
- * @file utils.ts
- * @description All the utility functions
+ * @file Copyright.ts
+ * @description Copyright header class
  * @author Dushan Ranasinghage
  * @copyright Copyright 2023 - Dushan Ranasinghage. All Rights Reserved.
  */
@@ -15,13 +15,13 @@ class Copyright {
     }
 
     get() {
-        const header = `
-        /**
-        * @file utils.ts
-        * @description 
-        * @author ${this.author}
-        * @copyright Copyright 2023 - Dushan Ranasinghage. All Rights Reserved.
-        */`;
+        let header = `/**
+ * @file utils.ts
+ * @description 
+ * @author ${this.author}
+ * @copyright Copyright 2023 - Dushan Ranasinghage. All Rights Reserved.\n`;
+
+        header += ` **/\n`;
 
         return header;
     }

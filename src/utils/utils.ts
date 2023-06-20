@@ -12,21 +12,25 @@ import { languages } from '../constants/constants';
 import Copyright from '../service/Copyright';
 
 function copyrightCheck(editor: vscode.TextEditor | undefined) {
-    if (editor !== undefined && isSupportedLanguage(editor.document.languageId)) {
+    if (editor !== undefined && isSupportedLanguage(editor.document.languageId) && isNewFile(editor.document)) {
         insertCopyrightHeader(editor);
     }
 }
 
 function insertCopyrightHeader(editor: vscode.TextEditor) {
-    const docStartPosition = new vscode.Position(0, 0);
+    const fileStartPosition = new vscode.Position(0, 0);
     const copyright = new Copyright();
     const copyrightHeader = copyright.get();
 
-    editor.edit(document => document.insert(docStartPosition, copyrightHeader));
+    editor.edit(file => file.insert(fileStartPosition, copyrightHeader));
 }
 
 function isSupportedLanguage(lang: string) {
     return languages.has(lang);
+}
+
+function isNewFile(file: any) {
+    return file.lineCount <= 1;
 }
 
 export {
