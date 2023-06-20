@@ -9,8 +9,13 @@ import * as vscode from 'vscode';
 
 class Configuration {
     private configuration;
-    constructor(configName: string) {
-        this.configuration = vscode.workspace.getConfiguration(configName);
+
+    /**
+     * 
+     * @param configPropType { copyright }
+     */
+    constructor(configPropType: string) {
+        this.configuration = vscode.workspace.getConfiguration(configPropType);
     }
 
     /**
