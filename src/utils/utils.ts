@@ -12,7 +12,8 @@ import { languages } from '../constants/constants';
 import Copyright from '../service/Copyright';
 
 function copyrightCheck(editor: vscode.TextEditor | undefined) {
-    if (editor !== undefined && isSupportedLanguage(editor.document.languageId) && isNewFile(editor.document)) {
+    if (editor !== undefined && isSupportedLanguage(editor.document.languageId) &&
+        (config.get('isNewFiles') ? isNewFile(editor.document) : true)) {
         insertCopyrightHeader(editor);
     }
 }

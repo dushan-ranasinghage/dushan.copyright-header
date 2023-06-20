@@ -30,6 +30,11 @@
 					"type": "string",
 					"default": "Dushan Ranasinghage",
 					"description": "The author who is doing the develoment in this workspace."
+				},
+        "copyright.isNewFiles": {
+					"type": "boolean",
+					"default": true,
+					"description": "Insert copyright header into new files only."
 				}
 			}
 		}
