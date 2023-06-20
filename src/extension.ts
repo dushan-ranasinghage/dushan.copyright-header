@@ -10,12 +10,11 @@
 import * as vscode from 'vscode';
 
 import config from './config/config';
+import { copyrightCheck } from './utils/utils';
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-	console.log('author', config.get('author'));
-	console.log('current editor', vscode.window.activeTextEditor);
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
@@ -31,7 +30,7 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
 	vscode.window.onDidChangeActiveTextEditor((editor) => {
-        console.log('current editor listner', editor);
+		copyrightCheck(editor);
     });
 
 	context.subscriptions.push(disposable);
