@@ -28,7 +28,7 @@ function insertCopyrightHeader(editor: vscode.TextEditor) {
 }
 
 function isSupportedLanguage(lang: string) {
-    return languages.has(lang);
+    return languages.includes(lang);
 }
 
 function isNewFile(file: any) {

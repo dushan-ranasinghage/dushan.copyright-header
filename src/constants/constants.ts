@@ -5,11 +5,23 @@
  * @copyright Copyright 2023 - Dushan Ranasinghage. All Rights Reserved.
  */
 
-const languages = new Set([
+const languages = [
     'javascript',
     'typescript',
-    'typescriptreact'
-]);
+    'typescriptreact',
+    'vue',
+    'scss',
+    'css',
+    'c',
+    'csharp',
+    'cpp',
+    'go',
+    'java',
+    'rust',
+    'scss',
+    'swift',
+    'sql'
+];
 
 export {
     languages
