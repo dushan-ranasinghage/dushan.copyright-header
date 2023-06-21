@@ -1,10 +1,10 @@
 # Copyright Header
 
-Copyright Header extension for VS Code offers the convenience of automatically incorporating your copyright notice and license (if applicable) into your source code.
+Copyright Header extension for VS Code offers the convenience of automatically incorporating your copyright header and license (if applicable) into your source code.
 
 ## Features
 
-Whenever new files are created, they will have the copyright notice (and optional license) automatically inserted at the beginning of the file. Additionally, you have the option to use the "Add Copyright Header" command in VS Code to manually include your copyright header in the current file.
+Whenever new files are created, they will have the copyright header automatically inserted at the beginning of the file. Additionally, you have the option to use the 'Add Copyright Header' command in VS Code to manually include your copyright header in the current file.
 
 ## Requirements
 
