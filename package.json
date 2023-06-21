@@ -13,6 +13,7 @@
   ],
   "icon": "./dist/images/icon.png",
   "galleryBanner": {
+    "color": "#23272f",
     "theme": "dark"
   },
   "categories": [
