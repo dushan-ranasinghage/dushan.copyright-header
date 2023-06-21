@@ -28,7 +28,19 @@
     "onCommand:copyright-header.add",
     "onLanguage:javascript",
     "onLanguage:typescript",
-    "onLanguage:typescriptreact"
+    "onLanguage:typescriptreact",
+    "onLanguage:vue",
+    "onLanguage:css",
+    "onLanguage:scss",
+    "onLanguage:objective-c",
+		"onLanguage:swift",
+		"onLanguage:sql",
+    "onLanguage:rust",
+		"onLanguage:java",
+    "onLanguage:csharp",
+    "onLanguage:c",
+		"onLanguage:cpp",
+		"onLanguage:go"
   ],
   "main": "./dist/extension.js",
   "contributes": {
