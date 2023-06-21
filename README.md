@@ -1,5 +1,11 @@
 # Copyright Header
 
+<!-- <video width="100%" autoplay>
+  <source src="./src/howto/dushan.copyright-header-howto1.mp4" type="video/mp4">
+</video> -->
+
+![](./src/howto/dushan.copyright-header-howto1.gif)
+
 Copyright Header extension for VS Code offers the convenience of automatically incorporating your copyright header and license (if applicable) into your source code.
 
 ## Features
