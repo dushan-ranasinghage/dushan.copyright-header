@@ -4,7 +4,7 @@
   <source src="./src/howto/dushan.copyright-header-howto1.mp4" type="video/mp4">
 </video> -->
 
-![](./src/howto/dushan.copyright-header-howto1.gif)
+![](https://github.com/dushan-ranasinghage/dushan.copyright-header/blob/main/src/howto/dushan.copyright-header-howto1.gif)
 
 Copyright Header extension for VS Code offers the convenience of automatically incorporating your copyright header and license (if applicable) into your source code.
 
