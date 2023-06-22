@@ -1,12 +1,13 @@
 # Copyright Header
 
-<!-- <video width="100%" autoplay>
-  <source src="./src/howto/dushan.copyright-header-howto1.mp4" type="video/mp4">
-</video> -->
+Copyright Header extension for VS Code offers the convenience of automatically incorporating your copyright header and license (if applicable) into your source code.
 
 ![](https://github.com/dushan-ranasinghage/dushan.copyright-header/blob/main/src/howto/dushan.copyright-header-howto1.gif?raw=true)
 
-Copyright Header extension for VS Code offers the convenience of automatically incorporating your copyright header and license (if applicable) into your source code.
+### Example
+
+![](https://github.com/dushan-ranasinghage/dushan.copyright-header/blob/main/src/howto/copyright-header-sample1.png?raw=true)
+
 
 ## Features
 
