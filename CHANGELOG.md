@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "copyright-header" extension will be documented in this file.
+## v1.0.3
+- Added more language support
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+## v1.0.0
+- Initial Release
+- Custom copyright
+- Enabling only for new files option
