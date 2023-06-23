@@ -28,7 +28,7 @@ class Copyright {
  * @author ${this.author}
  * @copyright ${this.copyrightLine}\n`;
 
-        header += ` **/\n\n`;
+        header += ` */\n\n`;
 
         return header;
     }

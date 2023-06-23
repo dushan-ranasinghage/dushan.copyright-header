@@ -3,7 +3,7 @@
   "displayName": "Copyright Header",
   "description": "This simplifies the process of automatically including copyright and license information into your code.",
   "license": "SEE LICENSE IN LICENSE.txt",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "engines": {
     "vscode": "^1.35.0"
   },
