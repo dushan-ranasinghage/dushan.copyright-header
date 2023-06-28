@@ -53,8 +53,12 @@ You can put issues here. For now we don't have any known issues.
 
 Here you can find the release notes of the extension. Keep track of the new updates.
 
-### 1.0.0
+### v1.0.3
+- Added more language support
 
-Initial release of Copyright Header
+### v1.0.0
+- Initial Release
+- Custom copyright
+- Enabling only for new files option
 
 **Enjoy!**
